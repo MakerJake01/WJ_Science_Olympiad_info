@@ -1,0 +1,2 @@
+# Case
+This case has space for an arduino uno and a half sized breadboard. There is a hole for the USB port, DC barrel jack, and wires that connect to the FSR. There are also three holes that fit 5mm LEDs. 

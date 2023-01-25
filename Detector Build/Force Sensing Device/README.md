@@ -2,11 +2,11 @@
 While this folder is specifically for the Mass sensing device the concepts can be applied to other categories
 
 # Detector schematics
-#### I have these two circuit schematics for detectors with different complexities
+#### I have these two circuit schematics for detectors with different complexities.
 
 ## Using the built in ADC of the Atmega328p
 ![Schematic](https://i.imgur.com/cdL5cyd.png)
-I used a similar design for my first three years of this event. It works well and is simple.
+I used a similar design for my first three years of this event. It works well and is simple. This is the bare minimum to get solid results.
 
 ## Using a secondary ADC
 ![Schematic](https://i.imgur.com/GRMG1O0.png)
@@ -19,3 +19,6 @@ The only real difference is the device that does the reading from the voltage di
 In order to use a chip like a secondary board that can be easily purchased would break this rule. However "*surface mount adapter boards*" are allowed. This adds complexity as there are additional parts needed for the ADS chip to work. Some parts like the ferrite beads could be skipped but its not recommended as they suppress signals on the voltage line. There are also two capacitors which protect the chip from voltage spikes. The final addition are the three 10k pull up resistors. **Do not** remove these they are needed for I<sup>2</sup>C communication.
 
 > In short you have to choose between a simpler circuit or more accuracy.
+
+### Possible changes. 
+You could use a [WS2811](https://cdn-shop.adafruit.com/datasheets/WS2811.pdf), [SK6812](https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf), [WS2812](https://cdn-shop.adafruit.com/datasheets/WS2812.pdf), or other similar addressable LED instead of three individual led. This switch would need a change to the code but it would also cut down on the number of parts. You would only need one led compared to three and you could cut down the number of resistors used.
