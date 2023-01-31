@@ -1828,10 +1828,10 @@
   (symbol (lib_id "Device:R_Small_US") (at 62.23 63.5 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 5bb9bcec-9f60-4a36-b646-41b2d53c7226)
-    (property "Reference" "R?" (id 0) (at 63.881 62.5915 0)
+    (property "Reference" "R?" (id 0) (at 64.77 62.2299 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "150" (id 1) (at 63.881 65.3666 0)
+    (property "Value" "147" (id 1) (at 64.77 64.7699 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "" (id 2) (at 62.23 63.5 0)
@@ -2390,7 +2390,7 @@
       (reference "R?") (unit 1) (value "10k") (footprint "")
     )
     (path "/5bb9bcec-9f60-4a36-b646-41b2d53c7226"
-      (reference "R?") (unit 1) (value "150") (footprint "")
+      (reference "R?") (unit 1) (value "147") (footprint "")
     )
     (path "/60b868e3-a9f8-4d20-ae5a-40ca53af4adb"
       (reference "R?") (unit 1) (value "150") (footprint "")
