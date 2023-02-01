@@ -22,3 +22,9 @@ In order to use a chip like a secondary board that can be easily purchased would
 
 ### Possible changes. 
 You could use a [WS2811](https://cdn-shop.adafruit.com/datasheets/WS2811.pdf), [SK6812](https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf), [WS2812](https://cdn-shop.adafruit.com/datasheets/WS2812.pdf), or other similar addressable LED instead of three individual led. This switch would need a change to the code but it would also cut down on the number of parts. You would only need one led compared to three and you could cut down the number of resistors used.
+
+# FSR Limitations
+> **Warning**
+> I play fast and loose with units. I will use base SI units unless stated otherwise.
+
+The [MF02A-N-221-A01](https://www.adafruit.com/product/1075) has a range of 1 N to 49 N. However it has to read between 30g and 1000g. To find the force we can use $f=ma$ and the low end .03 g so $f=.03*9.81=0.2943N$ This is well below the low end for the FSR. To find the lowest amount of weight we can measure natively we can rearrange $f=ma$ to isolate the unknown mass $\frac{f}{a}=m$. We know that $f=1$ and that $a=9.81$ so $\frac{1}{9.81}=m\approx0.102$. If you put a roughly 100 gram mass on the scale any mass added on to that will be registered by the FSR as the minimum has already been reached.
